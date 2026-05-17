@@ -1,5 +1,6 @@
 package com.suiwenyiwen.app.engine
 
+import com.suiwenyiwen.app.engine.PalaceBuilder.bureauNumber
 import com.suiwenyiwen.app.model.*
 
 /**

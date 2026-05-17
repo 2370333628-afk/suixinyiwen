@@ -357,9 +357,8 @@ object Interpreter {
                     append(" 从盘面来看，")
                     val favorable = readings.filter { it.fortuneLevel.score >= 4 }
                     if (favorable.isNotEmpty()) {
-                        append(favorable.take(2).joinToString("、") {
-                            it.palaceType.display
-                        }.let { "$it等方面较有优势。" })
+                        val names = favorable.take(2).joinToString("、") { it.palaceType.display }
+                        append("$names等方面较有优势。")
                     }
                     append(" 建议顺势而为，发挥所长。")
                 }

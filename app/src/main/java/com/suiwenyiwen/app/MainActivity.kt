@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             SuiWenYiWenTheme {
-                SuiWenYiWenApp()
+                MainScreen()
             }
         }
     }
@@ -39,7 +39,7 @@ sealed class Screen {
 }
 
 @Composable
-fun SuiWenYiWenApp() {
+fun MainScreen() {
     var currentScreen by remember { mutableStateOf<Screen>(Screen.Home) }
     var currentTime by remember { mutableStateOf(LocalDateTime.now()) }
 

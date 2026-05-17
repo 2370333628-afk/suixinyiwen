@@ -87,7 +87,7 @@ fun PalaceCard(
             // 展开详情
             if (isExpanded) {
                 Spacer(modifier = Modifier.height(8.dp))
-                HorizontalDivider(color = CardBorder)
+                Divider(color = CardBorder)
                 Spacer(modifier = Modifier.height(8.dp))
 
                 Text(
