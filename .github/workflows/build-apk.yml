@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      ANDROID_HOME: /home/runner/android-sdk
+      ANDROID_HOME: /usr/local/lib/android/sdk
 
     steps:
       - uses: actions/checkout@v4
@@ -20,19 +20,18 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Download Android SDK Command-line Tools
-        run: |
-          mkdir -p $ANDROID_HOME/cmdline-tools
-          cd $ANDROID_HOME/cmdline-tools
-          curl -sSLO https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
-          unzip -q commandlinetools-linux-11076708_latest.zip
-          mv cmdline-tools latest
-          rm commandlinetools-linux-11076708_latest.zip
-
       - name: Install Android SDK Packages
         run: |
+          if [ ! -f "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" ]; then
+            mkdir -p $ANDROID_HOME/cmdline-tools
+            cd $ANDROID_HOME/cmdline-tools
+            curl -sSLO https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+            unzip -q commandlinetools-linux-11076708_latest.zip
+            mv cmdline-tools latest
+            rm commandlinetools-linux-11076708_latest.zip
+          fi
           yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
-          $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
+          $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platforms;android-34" "build-tools;34.0.0"
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
