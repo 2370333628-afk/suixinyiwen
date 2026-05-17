@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
 
 sealed class Screen {
     object Home : Screen()
-    data class Result(val fortune: FortuneResult) : Screen()
+    class Result(val fortune: FortuneResult) : Screen()
 }
 
 @Composable
