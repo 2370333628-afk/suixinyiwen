@@ -19,7 +19,10 @@
       "Bash(rm -f \"/c/Users/23703/Desktop/随心一问/gradle-tmp.zip\" /tmp/gradle-8.5.zip 2>/dev/null; echo \"cleaned up\")",
       "Bash(git --version)",
       "Bash(gh --version)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "Bash(git -C \"/c/Users/23703/Desktop/随心一问\" rm gradle/wrapper/gradle-wrapper.jar)",
+      "Bash(git -C \"/c/Users/23703/Desktop/随心一问\" rm gradlew)",
+      "Bash(git -C \"/c/Users/23703/Desktop/随心一问\" rm gradlew.bat)"
     ],
     "additionalDirectories": [
       "\\tmp"
