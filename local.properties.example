@@ -1,0 +1,5 @@
+# 本地Android SDK路径配置（本地构建时需要）
+# Windows: sdk.dir=C\:\\Users\\你的用户名\\AppData\\Local\\Android\\Sdk
+# Mac: sdk.dir=/Users/你的用户名/Library/Android/sdk
+# Linux: sdk.dir=/home/你的用户名/Android/Sdk
+sdk.dir=/path/to/android/sdk

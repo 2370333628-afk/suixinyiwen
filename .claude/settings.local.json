@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/c/Users/23703/Desktop/随心一问/app/src/main/java/com/suiwenyiwen/app/ui/theme\")",
+      "Bash(mkdir -p \"/c/Users/23703/Desktop/随心一问/app/src/main/java/com/suiwenyiwen/app/ui/screens\")",
+      "Bash(mkdir -p \"/c/Users/23703/Desktop/随心一问/app/src/main/java/com/suiwenyiwen/app/ui/components\")",
+      "Bash(mkdir -p \"/c/Users/23703/Desktop/随心一问/app/src/main/java/com/suiwenyiwen/app/engine\")",
+      "Bash(mkdir -p \"/c/Users/23703/Desktop/随心一问/app/src/main/java/com/suiwenyiwen/app/model\")",
+      "Bash(curl -sL \"https://services.gradle.org/distributions/gradle-8.5-bin.zip\" -o /tmp/gradle-check.zip)",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/gradle/gradle/v8.5.0/gradlew\" -o \"/c/Users/23703/Desktop/随心一问/gradlew\")",
+      "Bash(curl -sL \"https://repo1.maven.org/maven2/org/gradle/gradle-wrapper/8.5/gradle-wrapper-8.5.jar\" -o \"/c/Users/23703/Desktop/随心一问/gradle/wrapper/gradle-wrapper.jar\")",
+      "Bash(curl -sL \"https://services.gradle.org/distributions/gradle-8.5-bin.zip\" -o gradle-tmp.zip)",
+      "Bash(unzip -q gradle-tmp.zip \"gradle-8.5/lib/gradle-wrapper-*.jar\" -d gradle-extract)",
+      "Bash(cp gradle-extract/gradle-8.5/lib/gradle-wrapper-*.jar gradle/wrapper/gradle-wrapper.jar)",
+      "Bash(gradle --version)",
+      "Bash(curl -sL \"https://services.gradle.org/distributions/gradle-8.5-bin.zip\" -o \"/tmp/gradle-8.5.zip\")",
+      "Read(//tmp/**)",
+      "Bash(curl -sL --connect-timeout 30 --max-time 120 \"https://raw.githubusercontent.com/gradle/gradle/v8.5.0/gradle/wrapper/gradle-wrapper.jar\" -o \"/c/Users/23703/Desktop/随心一问/gradle/wrapper/gradle-wrapper.jar\")",
+      "Bash(rm -f \"/c/Users/23703/Desktop/随心一问/gradle-tmp.zip\" /tmp/gradle-8.5.zip 2>/dev/null; echo \"cleaned up\")",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(git config *)"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
+    ]
+  }
+}

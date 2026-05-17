@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">随心一问</string>
+    <string name="ask_button">随心一问</string>
+    <string name="current_time">当前时间</string>
+    <string name="lunar_calendar">农历</string>
+    <string name="shichen">时辰</string>
+    <string name="overall_fortune">整体运势</string>
+    <string name="back">返回</string>
+    <string name="ask_again">再问一次</string>
+</resources>
