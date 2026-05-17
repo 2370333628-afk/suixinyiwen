@@ -358,7 +358,7 @@ object Interpreter {
                     val favorable = readings.filter { it.fortuneLevel.score >= 4 }
                     if (favorable.isNotEmpty()) {
                         val names = favorable.take(2).joinToString("、") { it.palaceType.display }
-                        append("$names等方面较有优势。")
+                        append("${names}等方面较有优势。")
                     }
                     append(" 建议顺势而为，发挥所长。")
                 }
