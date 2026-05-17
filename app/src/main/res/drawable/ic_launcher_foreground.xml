@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 太极外圆 -->
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M54,24c-16.569,0 -30,13.431 -30,30s13.431,30 30,30s30,-13.431 30,-30S70.569,24 54,24z"/>
+
+    <!-- 内部阴阳鱼白色半 -->
+    <path
+        android:fillColor="#1A1A2E"
+        android:pathData="M54,24c-16.569,0 -30,13.431 -30,30s13.431,30 30,30V24z"/>
+
+    <!-- 上方鱼眼 (金) -->
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M54,39m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+
+    <!-- 下方鱼眼 (暗) -->
+    <path
+        android:fillColor="#1A1A2E"
+        android:pathData="M54,69m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+</vector>
